@@ -1,0 +1,7 @@
+.highlighted {
+  background-color: yellow;
+  font-weight: bold;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
