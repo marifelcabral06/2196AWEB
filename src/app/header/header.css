@@ -1,0 +1,28 @@
+.cv-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #0f172a;
+  color: #e5e7eb;
+  border-bottom: 2px solid #38bdf8;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #f59e0b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.name {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.contact-info {
+  font-size

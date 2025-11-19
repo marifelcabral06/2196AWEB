@@ -1,0 +1,37 @@
+.technical-skills {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #111827;
+  border-radius: 12px;
+  color: #e5e7eb;
+}
+
+.section-title {
+  color: #38bdf8;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-categories {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.tech-category {
+  background: #1f2937;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #f59e0b;
+}
+
+.category-title {
+  font-size: 1.2rem;
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+}
+
+.tech-items {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
