@@ -1,0 +1,164 @@
+/* General Page Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  margin: 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+th {
+  background: #1e88e5;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+tr:hover td {
+  background: #f5faff;
+}
+
+/* Notes & Paragraph */
+h2, p {
+  margin: 8px 0;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  background: #1e88e5;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+/* Input box */
+input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 120px;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #e3f2fd;
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+/* General Page Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  margin: 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+th {
+  background: #1e88e5;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+tr:hover td {
+  background: #f5faff;
+}
+
+/* Notes & Paragraph */
+h2, p {
+  margin: 8px 0;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Buttons */
+button {
+  background: #1e88e5;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+/* Input box */
+input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 120px;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #e3f2fd;
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}

@@ -1,0 +1,100 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #e6f7ff);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #4a4a8c;
+  animation: fadeInDown 1.5s ease;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-left: 5px solid #4a90e2;
+  padding-left: 10px;
+}
+
+/* Section cards */
+section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Property Binding */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+button:hover:enabled {
+  transform: scale(1.05);
+  background: #357ab8;
+}
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Class Binding */
+.passing {
+  color: #27ae60;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.passing:hover {
+  transform: scale(1.1);
+}
+
+.failing {
+  color: #e74c3c;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.failing:hover {
+  transform: scale(1.1);
+}
+
+/* Style Binding box */
+.box {
+  border: 3px solid #4a4a8c;
+  margin-top: 15px;
+  display: inline-block;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  animation: pulse 2.5s infinite;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

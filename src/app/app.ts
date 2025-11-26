@@ -1,17 +1,12 @@
-import { Technical } from './technical/technical';
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Header } from "./header/header";
-import { Footer } from "./footer/footer";
-import { Profile } from "./profile/profile";
-import { Skills } from './skills/skills';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, Profile, Technical, Skills],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('my-first-app');
+  protected readonly title = signal('angular-routing-lab');
 }
