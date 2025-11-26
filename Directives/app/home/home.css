@@ -1,0 +1,246 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f); /* warm playful gradient */
+  font-family: 'Comic Neue', 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* CV Container */
+.cv-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px 60px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  border: 5px dashed #ff6f61; /* playful border */
+  transition: transform 0.3s ease;
+}
+
+.cv-container:hover {
+  transform: rotate(-1deg) scale(1.02);
+}
+
+/* Profile Picture
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+*/
+.profile-pic img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #ff6f61;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Header Styles */
+.cv-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #ff6f61;
+  text-shadow: 2px 2px #ffd166;
+}
+
+.contact-info {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contact-item strong {
+  font-weight: 700;
+  color: #222;
+}
+
+.contact-item a {
+  color: #06d6a0;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+.contact-item a:hover {
+  color: #118ab2;
+  transform: rotate(2deg);
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  height: 6px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ff6f61,
+    #ff6f61 10px,
+    #ffd166 10px,
+    #ffd166 20px
+  );
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #118ab2;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  border-left: 8px solid #06d6a0;
+  padding-left: 12px;
+  background: #ffd166;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 8px 12px;
+  transform: rotate(-1deg);
+}
+
+/* Profile Text */
+.profile-text {
+  font-size: 1.05rem;
+  color: #444;
+  text-align: justify;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  background: #f0f2f5;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px dotted #06d6a0;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  background: #ffe5ec;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skills-list li::before {
+  content: "🌟";
+  font-size: 1.2rem;
+}
+
+.skills-list li:hover {
+  background: #ffd6ff;
+  transform: scale(1.05) rotate(1deg);
+}
+
+/* Technical Skills Section */
+.tech-category {
+  background: #e0f7fa;
+  padding: 18px 22px;
+  border-radius: 15px;
+  border: 3px solid #118ab2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-category:hover {
+  transform: rotate(1deg) scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.category-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #118ab2;
+  margin-bottom: 10px;
+}
+
+.tech-items {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cv-container {
+    padding: 30px 25px;
+  }
+
+  .name {
+    font-size: 2.4rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-container {
+    padding: 20px 15px;
+  }
+
+  .profile-pic img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .profile-text,
+  .skills-list li,
+  .tech-items {
+    font-size: 0.9rem;
+  }
+}
