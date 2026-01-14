@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="alert-banner">🚀 Pipes Demo Works!</div>
+
+  <div class="pipe-section">
+    <h1>Date Pipe</h1>
+    <p>Current Date is <strong>{{ presentDate | date:'fullDate' | uppercase }}</strong></p>
+  </div>
+
+  <div class="pipe-section">
+    <h1>Chained Pipes</h1>
+    <p>Date with uppercase :- {{ presentDate | date:'fullDate' | uppercase }}</p>
+    <p>Date with lowercase :- {{ presentDate | date:'fullDate' | lowercase }}</p>
+  </div>
+
+  <div class="pipe-section">
+    <h1>Async Pipe</h1>
+    <p>Seconds changing in Time: {{ time$ | async | date:'mediumTime' }}</p>
+  </div>
+
+  <div class="pipe-section">
+    <h1>Currency Pipe</h1>
+    <p>{{ price | currency }}</p>
+    <p>{{ price | currency:'INR' }}</p>
+  </div>
+
+  <div class="pipe-section">
+    <h1>Slice Pipe</h1>
+    <p>Start index :- {{ Fruits | slice:2 }}</p>
+    <p>Start and end index: - {{ Fruits | slice:1:4 }}</p>
+    <p>Negative index :- {{ Fruits | slice:-2 }}</p>
+    <p>Negative start and end index :- {{ Fruits | slice:-4:-2 }}</p>
+  </div>
+
+  <div class="pipe-section center">
+    <h1>Decimal Pipe</h1>
+    <p>Apply formatting: - {{ decimalNum1 | number:'3.1' }}</p>
+    <p>Apply formatting: - {{ decimalNum1 | number:'2.1-4' }}</p>
+  </div>
+
+  <div class="pipe-section center">
+    <h1>Percent Pipe</h1>
+    <p>{{ percentValue | percent }}</p>
+    <p>{{ percentValue | percent:'1.1-2' }}</p>
+  </div>
+
+  <div class="pipe-section">
+    <h1>Title Case Pipe</h1>
+    <p>Original: {{ sampleText }}</p>
+    <p><strong>Transformed:</strong> {{ sampleText | titlecase }}</p>
+  </div>
+
+  <div class="pipe-section">
+    <h1>i18nSelect Pipe</h1>
+    <p>{{ gender | i18nSelect: genderMap }} is learning Angular Pipes!</p>
+  </div>
+</div>

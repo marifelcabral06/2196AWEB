@@ -1,0 +1,88 @@
+/* Global futuristic theme */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top left, #0f0f1a, #000000);
+  color: #e0e0e0;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Futuristic card sections */
+.pipe-section {
+  background: rgba(20, 20, 40, 0.9);
+  border: 1px solid #00f7ff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+/* Neon glow hover effect */
+.pipe-section:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 247, 255, 0.9), 0 0 50px rgba(255, 0, 255, 0.6);
+}
+
+/* Section headings */
+.pipe-section h1 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #00f7ff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Paragraphs */
+.pipe-section p {
+  font-size: 1rem;
+  margin: 6px 0;
+  color: #cfcfcf;
+}
+
+/* Highlighted text */
+.pipe-section strong {
+  color: #ff00ff;
+}
+
+/* Centered content */
+.center {
+  text-align: center;
+}
+
+/* Futuristic banner */
+.alert-banner {
+  background: linear-gradient(90deg, #00f7ff, #ff00ff);
+  color: #000;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.8);
+  animation: pulseBanner 3s infinite;
+}
+
+/* Animations */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseBanner {
+  0% { box-shadow: 0 0 15px rgba(0, 247, 255, 0.6); }
+  50% { box-shadow: 0 0 30px rgba(255, 0, 255, 0.9); }
+  100% { box-shadow: 0 0 15px rgba(0, 247, 255, 0.6); }
+}
