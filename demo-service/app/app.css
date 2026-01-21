@@ -1,0 +1,92 @@
+/* Global layout */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #f6f8f7, #eef2ef);
+  padding: 40px 20px;
+  color: #2b2b2b;
+}
+
+/* Section titles */
+h2 {
+  text-align: center;
+  margin: 45px 0 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #2f4f4f;
+  position: relative;
+}
+
+/* Decorative line under title */
+h2::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #7ba7a6, #4f7c7a);
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+/* Table base */
+table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 55px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Table header */
+th {
+  background-color: #2f4f4f;
+  color: #ffffff;
+  padding: 16px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Table cells */
+td {
+  padding: 14px;
+  font-size: 14px;
+  text-align: center;
+  color: #444;
+  border-bottom: 1px solid #edf1ef;
+}
+
+/* Zebra rows */
+tr:nth-child(even) td {
+  background-color: #f7faf9;
+}
+
+/* Hover interaction */
+tr {
+  transition: all 0.25s ease;
+}
+
+tr:hover td {
+  background-color: #e9f3f2;
+  color: #1f3f3f;
+}
+
+/* Emphasis for price column */
+td:last-child {
+  font-weight: 600;
+  color: #4f7c7a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
